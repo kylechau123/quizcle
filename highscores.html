@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>High scores</h1>
+    <ul id="list">
+    </ul>
+
+    <button id="back">Go Back</button>
+    <button id="clear">Clear Highscore</button>
+
+    <script>
+        var savedScores = JSON.parse(localStorage.getItem("savedScore"));
+        var list = document.getElementById("list")
+        var back = document.getElementById("back")
+        var clear = document.getElementById("clear")
+
+        for (i = 0; i < savedScores.length; i++) {
+            var item = document.createElement('li')
+
+            item.textContent = savedScores[i].initials + " - " + savedScores[i].score;
+
+            list.appendChild(item)
+        }
+
+
+        back.addEventListener("click", function() {
+            window.location.href = "./index.html"
+        })
+
+        clear.addEventListener("click", function() {
+            localStorage.clear()
+        })
+
+    </script>
+</body>
+
+</html>
