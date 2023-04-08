@@ -54,7 +54,9 @@ function displayQuestion() {
     for(i = 0; i < 4; i++) {
 
     var choice = document.createElement('button')
-
+    
+    choice.classList.add("list-group-item", "list-group-item-action")
+    
     choice.textContent = questions[currentIndex]["Answers"][i]
 
     choice.addEventListener('click', nextQuestion)

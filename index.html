@@ -14,24 +14,24 @@
         <p>Time:<span id = "Timer">0</span></p>
     </nav>
     
-    <div id = "opening">
+    <div class = "container" id = "opening">
         <h1>
             Coding Quiz Challenge
         </h1>
 
-        <p>Welcome to the coding quiz! Please press the start button to begin the challenge.</p>
+        <p id= "bio">Welcome to the coding quiz! Please press the start button to begin the challenge.</p>
         
-        <button id = "startBtn" type="button" class="btn btn-primary">Start</button>
+        <div class= "startBtn"><button id = "startBtn" type="button" class="btn btn-primary">Start</button></div>
     </div>
 
-    <div id="questionEl"></div>
+    <div class = "container" id="questionEl"></div>
 
-    <div id="closing" class="hide">
+    <div id="closing" class="hide container">
         <h2>The quiz is over!</h2>
         <p>Your score is <span id="score"></span></p>
 
-        <input type="text" id="initials"/>
-        <button id="save">Save</button>
+        <input class = "form-control" type="text" id="initials"/>
+        <div class="saveBtn"><button class = "btn btn-primary" id="save">Save</button></div>
     </div>
 
     <script src = "./script.js"></script>
