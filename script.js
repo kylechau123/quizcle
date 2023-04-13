@@ -16,13 +16,28 @@ var savedScores = JSON.parse(localStorage.getItem("savedScore")) || []
 var questions = [
     {
         "Question-title": "What is an array?",
-        "Answers": ["first", "second", "third","fourth"],
-        "Correct-answer": "second",
+        "Answers": ["A variable", "A name of a storage location", "A compilation of multiple values in a single variable","A set of statements that performs a task or calculates a value"],
+        "Correct-answer": "A compilation of multiple values in a single variable",
     },
     {
         "Question-title": "What is an object?",
-        "Answers": ["1st", "second", "third","fourth"],
-        "Correct-answer": "1st",
+        "Answers": ["A standalone entity, with properties and type", "A series of characters and is written with quotes", "Represents a non-existent or a invalid value", "A scripting language"],
+        "Correct-answer": "A standalone entity, with properties and type",
+    },
+    {
+        "Question-title": "What is a string?",
+        "Answers": ["A compilation of multiple values in a single variable", "A sequence of one or more characters that may consist of letters, numbers, or symbols in quotes", "A standalone entity, with properties and type", "A name of a storage location"],
+        "Correct-answer": "A sequence of one or more characters that may consist of letters, numbers, or symbols in quotes",
+    },
+    {
+        "Question-title": "Inside which HTML element do we put the JavaScript?",
+        "Answers": ["<js>", "<script>", "<JavaScript>", "<jscript>"],
+        "Correct-answer": "<script>",
+    },
+    {
+        "Question-title": "Which operator is used to assign a value to a variable?",
+        "Answers": ["*", "=", "+", "()"],
+        "Correct-answer": "=",
     }
 ]
 
